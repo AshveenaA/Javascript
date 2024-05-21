@@ -1,14 +1,14 @@
-//Promises
+
 const cart=["shoe","bag","watch"]
 
-createOrder(cart,function(orderId){
+api.createOrder(cart,function(){
 
-    proceedtoPayment(orderId)
+    api.proceedtoPayment(function(orderId){
+
+        api.orderSummary(orderId)
+    });
+    
 });
 
-const Promise =createOrder(orderId)
-
-Promise.the(function(orderId)
-{
-    proceedtoPayment(orderId);
-});
+//callback hell
+//inversion of control
