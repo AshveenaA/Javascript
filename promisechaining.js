@@ -27,7 +27,3 @@ createOrder(cart)
 });
 
 
-
-createOrder(){
-    console.log
-}
